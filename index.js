@@ -151,10 +151,14 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval);
  
+ for(let i = 0; i < 4; i++) {
+    document.remove(ROCKS[i]);
+  }
+  
   document.querySelectorAll('.rock').forEach(function(a){
 a.remove()
 })
-
+  
   document.removeEventListener('keydown', moveDodger);
   
   alert("YOU LOSE!");
