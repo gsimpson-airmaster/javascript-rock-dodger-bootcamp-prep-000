@@ -154,6 +154,7 @@ function endGame() {
   document.querySelectorAll('.rock').forEach(function(a){
 a.remove()
 })
+
   document.removeEventListener('keydown', moveDodger);
   
   alert("YOU LOSE!");
