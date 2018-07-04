@@ -152,7 +152,7 @@ function endGame() {
   clearInterval(gameInterval);
  
  for(let i = 0; i < ROCKS.length; i++) {
-    GAME.removeChild(ROCKS[i]);
+    ROCKS[i].remove();
   }
   
   document.querySelectorAll('.rock').forEach(function(a){
